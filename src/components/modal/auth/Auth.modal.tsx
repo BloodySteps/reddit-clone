@@ -1,6 +1,6 @@
-import React from 'react';
-import { Modal, Button, Group, Text } from '@mantine/core';
 import useAuthStore from '@/context/auth.context';
+import { Modal, Text } from '@mantine/core';
+import React from 'react';
 import AuthInputs from './AuthInputs';
 
 const AuthModal: React.FC = () => {

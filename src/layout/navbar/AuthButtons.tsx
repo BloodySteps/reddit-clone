@@ -1,8 +1,8 @@
-import React from 'react';
-import { Group, Button, CSSObject } from '@mantine/core';
-import ProfileMenu from './ProfileMenu';
 import AuthModal from '@/components/modal/auth/Auth.modal';
 import useAuthStore from '@/context/auth.context';
+import { Button, Group } from '@mantine/core';
+import React from 'react';
+import ProfileMenu from './ProfileMenu';
 
 interface AuthBtnProps {
   hideClass: string;

@@ -1,13 +1,6 @@
-import {
-  Box,
-  Button,
-  Group,
-  NumberInput,
-  PasswordInput,
-  TextInput,
-} from '@mantine/core';
-import { z } from 'zod';
+import { Box, Button, PasswordInput, TextInput } from '@mantine/core';
 import { useForm, zodResolver } from '@mantine/form';
+import { z } from 'zod';
 
 interface FormValues {
   email: string;

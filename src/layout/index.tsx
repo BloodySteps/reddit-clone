@@ -9,7 +9,7 @@ type LayoutProps = {
 };
 
 const Layout = ({ children }: LayoutProps) => {
-  const [isHide, setIsHide] = useState<Boolean>(false);
+  const [isHide, setIsHide] = useState<boolean>(false);
 
   useEffect(
     () => (Router.pathname !== '/404' ? setIsHide(true) : setIsHide(false)),

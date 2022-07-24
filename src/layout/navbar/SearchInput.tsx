@@ -2,9 +2,7 @@ import { Select } from '@mantine/core';
 import React from 'react';
 import { FiSearch } from 'react-icons/fi';
 
-type SearchInputProps = {};
-
-const SearchInput: React.FC<SearchInputProps> = () => {
+const SearchInput: React.FC = () => {
   return (
     <Select
       placeholder="Search Reddit"

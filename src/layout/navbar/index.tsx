@@ -1,16 +1,12 @@
-import Logo from '@/components/Logo';
+import WhiteText from '@/assets/svg/reddit-white.svg';
+import Face from '@/assets/svg/redditFace.svg';
+import BlackText from '@/assets/svg/redditText.svg';
 import { Box, createStyles, useMantineColorScheme } from '@mantine/core';
 import React from 'react';
 import AuthButtons from './AuthButtons';
 import SearchInput from './SearchInput';
-import Face from '@/assets/svg/redditFace.svg';
-import BlackText from '@/assets/svg/redditText.svg';
-import WhiteText from '@/assets/svg/reddit-white.svg';
-import { useColorScheme } from '@mantine/hooks';
 
-type NavbarProps = {};
-
-const useStyles = createStyles((theme, _params, getRef) => ({
+const useStyles = createStyles((theme) => ({
   wrapper: {
     height: '49px',
     background:
@@ -39,7 +35,7 @@ const useStyles = createStyles((theme, _params, getRef) => ({
   },
 }));
 
-const Navigation: React.FC<NavbarProps> = () => {
+const Navigation: React.FC = () => {
   const mode = useMantineColorScheme();
   const dark = mode.colorScheme === 'dark';
 

@@ -6,8 +6,6 @@ import { BsCoin } from 'react-icons/bs';
 import { FaBullhorn } from 'react-icons/fa';
 import { SiCastro } from 'react-icons/si';
 
-type ProfileMenuProps = {};
-
 const noUsers = [
   {
     id: 1,
@@ -43,7 +41,7 @@ const noUsers = [
   },
 ];
 
-const ProfileMenu: React.FC<ProfileMenuProps> = () => {
+const ProfileMenu: React.FC = () => {
   return (
     <Menu
       gutter={9}
@@ -55,10 +53,8 @@ const ProfileMenu: React.FC<ProfileMenuProps> = () => {
       }
     >
       {noUsers.map(({ id, Icon, text, link }) => (
-        <Anchor href={link} target="_blank">
-          <Menu.Item key={id} icon={<Icon size={16} />}>
-            {text}
-          </Menu.Item>
+        <Anchor key={id} href={link} target="_blank">
+          <Menu.Item icon={<Icon size={16} />}>{text}</Menu.Item>
         </Anchor>
       ))}
 

@@ -1,10 +1,7 @@
 import { Box } from '@mantine/core';
-import { useColorScheme } from '@mantine/hooks';
 import React from 'react';
 
 const Logo: React.FC = () => {
-  const colorScheme = useColorScheme();
-
   return (
     <Box sx={{ display: 'flex', alignItems: 'center' }}>
       <svg

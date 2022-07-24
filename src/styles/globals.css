@@ -8,4 +8,14 @@
   --accent: #ff6314;
 
   --text-dark-mode: rgb(215, 218, 220);
+  --bg-dark-mode: #030303;
+}
+
+/*----------  utility classes  ----------*/
+.flex {
+  display: flex;
+}
+
+.item-center {
+  align-items: center;
 }

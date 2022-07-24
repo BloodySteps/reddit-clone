@@ -7,8 +7,8 @@ import type { AppProps } from 'next/app';
 import Router from 'next/router';
 
 import { SEO } from '@/constants/seo-constants';
-import '@/styles/globals.css';
 import Layout from '@/layout';
+import '@/styles/globals.css';
 import { Mantine } from '@/theme';
 
 const progress = new ProgressBar({

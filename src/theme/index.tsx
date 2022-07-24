@@ -1,11 +1,12 @@
-import {
-  MantineProvider,
-  ColorSchemeProvider,
-  ColorScheme,
-} from '@mantine/core';
-import { useHotkeys, useLocalStorage } from '@mantine/hooks';
+import ThemeSwitcher from '@/components/ThemeSwitcher';
 import '@fontsource/noto-sans';
 import '@fontsource/open-sans';
+import {
+  ColorScheme,
+  ColorSchemeProvider,
+  MantineProvider,
+} from '@mantine/core';
+import { useHotkeys, useLocalStorage } from '@mantine/hooks';
 import { GlobalStyles } from './Global';
 
 interface MantineProps {
@@ -39,6 +40,7 @@ export const Mantine = ({ children }: MantineProps) => {
       >
         <GlobalStyles />
         {children}
+        <ThemeSwitcher />
       </MantineProvider>
     </ColorSchemeProvider>
   );

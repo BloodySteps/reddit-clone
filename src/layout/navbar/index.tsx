@@ -1,15 +1,64 @@
-import ThemeSwitcher from '@/components/ThemeSwitcher';
+import Logo from '@/components/Logo';
+import { Box, createStyles, useMantineColorScheme } from '@mantine/core';
 import React from 'react';
+import AuthButtons from './AuthButtons';
 import SearchInput from './SearchInput';
+import Face from '@/assets/svg/redditFace.svg';
+import BlackText from '@/assets/svg/redditText.svg';
+import WhiteText from '@/assets/svg/reddit-white.svg';
+import { useColorScheme } from '@mantine/hooks';
 
 type NavbarProps = {};
 
-const Navbar: React.FC<NavbarProps> = () => {
+const useStyles = createStyles((theme, _params, getRef) => ({
+  wrapper: {
+    height: '49px',
+    background:
+      theme.colorScheme === 'light' ? 'var(--white-clr)' : theme.colors.dark[7],
+    display: 'flex',
+    alignAitems: 'center',
+    paddingInline: '30px',
+
+    [`@media (max-width: ${theme.breakpoints.sm}px)`]: {
+      paddingInline: '10px',
+    },
+  },
+
+  logo: {
+    [`@media (max-width: ${theme.breakpoints.sm}px)`]: {
+      display: 'none',
+    },
+  },
+
+  child: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    width: '100%',
+    gap: '20px',
+  },
+}));
+
+const Navigation: React.FC<NavbarProps> = () => {
+  const mode = useMantineColorScheme();
+  const dark = mode.colorScheme === 'dark';
+
+  const { classes } = useStyles();
   return (
-    <div>
-      <ThemeSwitcher />
-      <SearchInput />
-    </div>
+    <Box className={classes.wrapper}>
+      <Box className={classes.child}>
+        <Box className="flex item-center">
+          <Face width={34} />
+          <Box className={classes.logo}>
+            {dark ? <WhiteText width={75} /> : <BlackText width={75} />}
+          </Box>
+        </Box>
+        <SearchInput />
+        <Box className={classes.logo}>
+          <AuthButtons />
+        </Box>
+      </Box>
+    </Box>
   );
 };
-export default Navbar;
+export default Navigation;

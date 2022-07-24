@@ -31,6 +31,7 @@
     "@fontsource/noto-sans": "4.5.10",
     "@fontsource/open-sans": "4.5.10",
     "@mantine/core": "4.2.12",
+    "@mantine/form": "4.2.12",
     "@mantine/hooks": "4.2.12",
     "@mantine/next": "4.2.12",
     "@next/bundle-analyzer": "12.2.3",
@@ -45,6 +46,7 @@
     "react-dom": "18.2.0",
     "react-icons": "4.4.0",
     "slugify": "1.6.5",
+    "zod": "3.17.10",
     "zustand": "4.0.0-rc.4"
   },
   "devDependencies": {

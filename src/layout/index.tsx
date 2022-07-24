@@ -18,10 +18,8 @@ const Layout = ({ children }: LayoutProps) => {
 
   return (
     <>
-      <Box>
-        {isHide && <Navbar />}
-        <Box>{children}</Box>
-      </Box>
+      {isHide && <Navbar />}
+      <Box>{children}</Box>
     </>
   );
 };

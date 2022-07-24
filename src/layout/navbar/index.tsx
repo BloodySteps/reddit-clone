@@ -50,8 +50,8 @@ const Navigation: React.FC = () => {
           </Box>
         </Box>
         <SearchInput />
-        <Box className={classes.logo}>
-          <AuthButtons />
+        <Box>
+          <AuthButtons hideClass={classes.logo} />
         </Box>
       </Box>
     </Box>

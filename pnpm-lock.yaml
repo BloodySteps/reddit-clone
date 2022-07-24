@@ -8,6 +8,7 @@ specifiers:
   '@fontsource/noto-sans': 4.5.10
   '@fontsource/open-sans': 4.5.10
   '@mantine/core': 4.2.12
+  '@mantine/form': 4.2.12
   '@mantine/hooks': 4.2.12
   '@mantine/next': 4.2.12
   '@next/bundle-analyzer': 12.2.3
@@ -38,6 +39,7 @@ specifiers:
   react-icons: 4.4.0
   slugify: 1.6.5
   typescript: 4.7.4
+  zod: 3.17.10
   zustand: 4.0.0-rc.4
 
 dependencies:
@@ -45,6 +47,7 @@ dependencies:
   '@fontsource/noto-sans': 4.5.10
   '@fontsource/open-sans': 4.5.10
   '@mantine/core': 4.2.12_essemuo2ilucam5kriquhcncne
+  '@mantine/form': 4.2.12_react@18.2.0
   '@mantine/hooks': 4.2.12_react@18.2.0
   '@mantine/next': 4.2.12_sdac2rjqy2msaqgbuupvjqurpi
   '@next/bundle-analyzer': 12.2.3
@@ -59,6 +62,7 @@ dependencies:
   react-dom: 18.2.0_react@18.2.0
   react-icons: 4.4.0_react@18.2.0
   slugify: 1.6.5
+  zod: 3.17.10
   zustand: 4.0.0-rc.4_react@18.2.0
 
 devDependencies:
@@ -2203,6 +2207,14 @@ packages:
     transitivePeerDependencies:
       - '@babel/core'
       - '@types/react'
+    dev: false
+
+  /@mantine/form/4.2.12_react@18.2.0:
+    resolution: {integrity: sha512-CnpkzZr7VVekN3gg/4fMG9DYEqDsOg1jJGGxFKZ7GjR4liwEOsL3FvC+Szi3OlI0ytfLFOg8zU8RCoEO758sQA==}
+    peerDependencies:
+      react: '>=16.8.0'
+    dependencies:
+      react: 18.2.0
     dev: false
 
   /@mantine/hooks/4.2.12_react@18.2.0:
@@ -7018,6 +7030,10 @@ packages:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
     dev: true
+
+  /zod/3.17.10:
+    resolution: {integrity: sha512-IHXnQYQuOOOL/XgHhgl8YjNxBHi3xX0mVcHmqsvJgcxKkEczPshoWdxqyFwsARpf41E0v9U95WUROqsHHxt0UQ==}
+    dev: false
 
   /zustand/4.0.0-rc.4_react@18.2.0:
     resolution: {integrity: sha512-BP35Rq40GBTKKtYyjLuZogzXGh289xqO8U8ivGIK43nRqURD2dEEImkUci1/jWRUz7J1OPJkUZuNySCho801gQ==}

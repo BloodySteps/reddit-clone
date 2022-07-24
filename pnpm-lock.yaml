@@ -5,6 +5,7 @@ specifiers:
   '@badrap/bar-of-progress': 0.2.1
   '@commitlint/cli': 17.0.3
   '@commitlint/config-conventional': 17.0.3
+  '@fontsource/noto-sans': 4.5.10
   '@mantine/core': 4.2.12
   '@mantine/hooks': 4.2.12
   '@mantine/next': 4.2.12
@@ -39,6 +40,7 @@ specifiers:
 
 dependencies:
   '@badrap/bar-of-progress': 0.2.1
+  '@fontsource/noto-sans': 4.5.10
   '@mantine/core': 4.2.12_essemuo2ilucam5kriquhcncne
   '@mantine/hooks': 4.2.12_react@18.2.0
   '@mantine/next': 4.2.12_sdac2rjqy2msaqgbuupvjqurpi
@@ -1033,6 +1035,10 @@ packages:
 
   /@firebase/webchannel-wrapper/0.6.2:
     resolution: {integrity: sha512-zThUKcqIU6utWzM93uEvhlh8qj8A5LMPFJPvk/ODb+8GSSif19xM2Lw1M2ijyBy8+6skSkQBbavPzOU5Oh/8tQ==}
+    dev: false
+
+  /@fontsource/noto-sans/4.5.10:
+    resolution: {integrity: sha512-sJ5WOE5zX9kFBZWsIRtGWTD2/DvashD1Q1L+Jhh5FccWLrug4REw2PVYItPnA8XBdQ09Vpxd8+I6UsKI/5QdFg==}
     dev: false
 
   /@grpc/grpc-js/1.6.8:

@@ -28,6 +28,7 @@
   },
   "dependencies": {
     "@badrap/bar-of-progress": "0.2.1",
+    "@fontsource/noto-sans": "4.5.10",
     "@mantine/core": "4.2.12",
     "@mantine/hooks": "4.2.12",
     "@mantine/next": "4.2.12",

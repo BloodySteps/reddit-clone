@@ -2,8 +2,7 @@ import { Box } from '@mantine/core';
 import Router from 'next/router';
 
 import { ReactNode, useEffect, useState } from 'react';
-
-import Header from './Header';
+import Navbar from './navbar';
 
 type LayoutProps = {
   children: ReactNode;
@@ -20,7 +19,7 @@ const Layout = ({ children }: LayoutProps) => {
   return (
     <Box>
       <Box>
-        {isHide && <Header />}
+        {isHide && <Navbar />}
         <Box>{children}</Box>
       </Box>
     </Box>

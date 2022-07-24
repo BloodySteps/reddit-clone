@@ -1,1 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap');
+/*----------  Variables  ----------*/
+:root {
+  --gray-clr: #d7d7d7;
+  --white-clr: #fff;
+  --blue-clr: #5296dd;
+  --light-blue-clr: #92bddf;
+  --accent: #ff6314;
+}

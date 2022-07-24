@@ -17,12 +17,12 @@ const Layout = ({ children }: LayoutProps) => {
   );
 
   return (
-    <Box>
+    <>
       <Box>
         {isHide && <Navbar />}
         <Box>{children}</Box>
       </Box>
-    </Box>
+    </>
   );
 };
 

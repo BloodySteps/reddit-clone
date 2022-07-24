@@ -2,7 +2,7 @@ import React from 'react';
 import { useMantineColorScheme, ActionIcon, Group } from '@mantine/core';
 import { FaMoon, FaSun } from 'react-icons/fa';
 
-export default function ActionToggle() {
+export default function ThemeSwitcher() {
   const { colorScheme, toggleColorScheme } = useMantineColorScheme();
 
   return (

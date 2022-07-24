@@ -1,7 +1,7 @@
 import ProgressBar from '@badrap/bar-of-progress';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
-import { Mantine } from '@/components/Mantine';
+
 import { DefaultSeo } from 'next-seo';
 import type { AppProps } from 'next/app';
 import Router from 'next/router';
@@ -9,6 +9,7 @@ import Router from 'next/router';
 import { SEO } from '@/constants/seo-constants';
 import '@/styles/globals.css';
 import Layout from '@/layout';
+import { Mantine } from '@/theme';
 
 const progress = new ProgressBar({
   size: 2,

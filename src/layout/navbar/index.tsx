@@ -1,12 +1,14 @@
-import ActionToggle from '@/components/ThemeSwitcher';
+import ThemeSwitcher from '@/components/ThemeSwitcher';
 import React from 'react';
+import SearchInput from './SearchInput';
 
 type NavbarProps = {};
 
 const Navbar: React.FC<NavbarProps> = () => {
   return (
     <div>
-      <ActionToggle />
+      <ThemeSwitcher />
+      <SearchInput />
     </div>
   );
 };

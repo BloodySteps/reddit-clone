@@ -5,6 +5,8 @@ import {
 } from '@mantine/core';
 import { useHotkeys, useLocalStorage } from '@mantine/hooks';
 import '@fontsource/noto-sans';
+import '@fontsource/open-sans';
+import { GlobalStyles } from './Global';
 
 interface MantineProps {
   children: React.ReactNode;
@@ -32,9 +34,10 @@ export const Mantine = ({ children }: MantineProps) => {
         withNormalizeCSS
         theme={{
           colorScheme,
-          fontFamily: 'Noto Sans',
+          fontFamily: 'Noto Sans, Open Sans',
         }}
       >
+        <GlobalStyles />
         {children}
       </MantineProvider>
     </ColorSchemeProvider>

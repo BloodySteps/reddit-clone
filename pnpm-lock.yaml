@@ -6,6 +6,7 @@ specifiers:
   '@commitlint/cli': 17.0.3
   '@commitlint/config-conventional': 17.0.3
   '@fontsource/noto-sans': 4.5.10
+  '@fontsource/open-sans': 4.5.10
   '@mantine/core': 4.2.12
   '@mantine/hooks': 4.2.12
   '@mantine/next': 4.2.12
@@ -41,6 +42,7 @@ specifiers:
 dependencies:
   '@badrap/bar-of-progress': 0.2.1
   '@fontsource/noto-sans': 4.5.10
+  '@fontsource/open-sans': 4.5.10
   '@mantine/core': 4.2.12_essemuo2ilucam5kriquhcncne
   '@mantine/hooks': 4.2.12_react@18.2.0
   '@mantine/next': 4.2.12_sdac2rjqy2msaqgbuupvjqurpi
@@ -1039,6 +1041,10 @@ packages:
 
   /@fontsource/noto-sans/4.5.10:
     resolution: {integrity: sha512-sJ5WOE5zX9kFBZWsIRtGWTD2/DvashD1Q1L+Jhh5FccWLrug4REw2PVYItPnA8XBdQ09Vpxd8+I6UsKI/5QdFg==}
+    dev: false
+
+  /@fontsource/open-sans/4.5.10:
+    resolution: {integrity: sha512-MrtTDfWb1Tu9YxVh2KaKmsKBn6O3KL/lHZS0KRKK58jgqvdwuiDt4QW4udmW4FQf0XOWgnZ+4vKUF80F3SqBAA==}
     dev: false
 
   /@grpc/grpc-js/1.6.8:

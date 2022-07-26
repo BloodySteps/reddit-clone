@@ -43,23 +43,21 @@ const noUsers = [
 
 const ProfileMenu: React.FC = () => {
   return (
-    <Menu
-      gutter={9}
-      control={
+    <Menu shadow="md" width={200}>
+      <Menu.Target>
         <Button variant="default" size="xs" className="flex item-center">
           <AiOutlineUser fontSize="20px" />
           <AiFillCaretDown />
         </Button>
-      }
-    >
-      {noUsers.map(({ id, Icon, text, link }) => (
-        <Anchor key={id} href={link} target="_blank">
-          <Menu.Item icon={<Icon size={16} />}>{text}</Menu.Item>
-        </Anchor>
-      ))}
+      </Menu.Target>
 
-      <Divider />
-      <Menu.Item>skal</Menu.Item>
+      <Menu.Dropdown>
+        {noUsers.map(({ id, Icon, text, link }) => (
+          <Anchor key={id} href={link} target="_blank">
+            <Menu.Item icon={<Icon size={16} />}>{text}</Menu.Item>
+          </Anchor>
+        ))}
+      </Menu.Dropdown>
     </Menu>
   );
 };

@@ -11,6 +11,8 @@ const AuthModal: React.FC = () => {
       <Modal
         opened={isOpen}
         onClose={ModalCloseHandler}
+        centered
+        lockScroll={false}
         title={
           <>
             <Text size="xl">{view}</Text>

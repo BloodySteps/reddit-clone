@@ -10,6 +10,9 @@ const SearchInput: React.FC = () => {
       icon={<FiSearch />}
       rightSection=" "
       searchable
+      transition="pop"
+      transitionDuration={300}
+      transitionTimingFunction="ease"
       nothingFound="Search Result not found"
       data={[
         {

@@ -1,4 +1,4 @@
-import { Anchor, Button, Divider, Menu } from '@mantine/core';
+import { Anchor, Button, Menu } from '@mantine/core';
 import React from 'react';
 import { AiFillCaretDown, AiOutlineUser } from 'react-icons/ai';
 import { BiHelpCircle, BiShieldQuarter } from 'react-icons/bi';

@@ -48,7 +48,7 @@
     "react-dom": "18.2.0",
     "react-icons": "4.4.0",
     "slugify": "1.6.5",
-    "zod": "3.17.10",
+    "yup": "0.32.11",
     "zustand": "4.0.0-rc.4"
   },
   "devDependencies": {

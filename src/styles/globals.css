@@ -19,3 +19,15 @@
 .item-center {
   align-items: center;
 }
+
+.anchor {
+  color: var(--blue-clr);
+  text-decoration: underline;
+  cursor: pointer;
+  display: inline-block;
+}
+
+/*----------  Subsection comment block  ----------*/
+.mantine-Modal-close {
+  align-self: baseline;
+}

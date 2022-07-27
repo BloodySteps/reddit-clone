@@ -1,6 +1,13 @@
-import { Box, Button, PasswordInput, TextInput } from '@mantine/core';
-import { useForm, zodResolver } from '@mantine/form';
-import { z } from 'zod';
+import {
+  Box,
+  Button,
+  PasswordInput,
+  Stack,
+  Text,
+  TextInput,
+} from '@mantine/core';
+import { useForm, yupResolver } from '@mantine/form';
+import * as Yup from 'yup';
 
 interface FormValues {
   email: string;
@@ -9,24 +16,22 @@ interface FormValues {
 
 /* tslint:disable-next-line */
 
-const schema = z.object({
-  email: z.string().trim().email({ message: 'Invalid email address' }),
-  password: z
-    .string()
-
-    .regex(
-      new RegExp(
-        '^(?=(.*[a-z]){3,})(?=(.*[A-Z]){2,})(?=(.*[0-9]){2,})(?=(.*[!@#$%^&*()-__+.]){1,}).{8,}$',
-      ),
-      'Password must be strong!',
-    )
-    .min(8, 'Must be at least 8 characters in length'),
+const schema = Yup.object().shape({
+  email: Yup.string().required('Email Required!!').email('Invalid email'),
+  password: Yup.string()
+    .required('Please Enter your password')
+    .min(8, 'Password is too short - should be 8 chars minimum.')
+    .matches(
+      /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/,
+      'Please choose strong password',
+    ),
 });
 
 function Login() {
   const form = useForm<FormValues>({
+    validateInputOnChange: true,
+    validate: yupResolver(schema),
     initialValues: { email: '', password: '' },
-    schema: zodResolver(schema),
   });
 
   return (
@@ -34,8 +39,14 @@ function Login() {
       <form
         onSubmit={form.onSubmit((values: FormValues) => console.log(values))}
       >
-        <TextInput placeholder="Email" {...form.getInputProps('email')} />
+        <TextInput
+          variant="filled"
+          placeholder="Email"
+          {...form.getInputProps('email')}
+        />
         <PasswordInput
+          variant="filled"
+          autoComplete="true"
           mt="sm"
           placeholder="Password"
           {...form.getInputProps('password')}
@@ -44,6 +55,15 @@ function Login() {
         <Button size="xs" fullWidth mt="sm" type="submit">
           Log In
         </Button>
+
+        <Stack spacing={0}>
+          <Text size="sm" mt="xs">
+            Forget your crediential <Box className="anchor">Reset Password</Box>{' '}
+          </Text>
+          <Text size="sm">
+            New to Reddit? <Box className="anchor"> Sign Up</Box>{' '}
+          </Text>
+        </Stack>
       </form>
     </Box>
   );
